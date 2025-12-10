@@ -24,16 +24,16 @@ void ft_err_2(char *str)
 }
 
 
-void ft_print(char **argv)
-{
-	int i = 0;
-	while (argv[i])
-	{
-		printf("'%s'", argv[i]);
-		i++;
-	}
-	printf("\n");
-}
+// void ft_print(char **argv)
+// {
+// 	int i = 0;
+// 	while (argv[i])
+// 	{
+// 		printf("'%s'", argv[i]);
+// 		i++;
+// 	}
+// 	printf("\n");
+// }
 
 int ft_cd(char **argv, int i)
 {
@@ -102,7 +102,6 @@ int ft_exec(char **argv, int i, char **env)
 int main(int argc, char **argv, char **env)
 {
 	(void)argc;
-	(void)env;
 
 	int i = 0;
 	while (argv[i] && argv[++i])
