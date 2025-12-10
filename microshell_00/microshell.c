@@ -6,7 +6,7 @@
 /*   By: fmoulin <fmoulin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/08 15:44:32 by fmoulin           #+#    #+#             */
-/*   Updated: 2025/12/08 18:34:46 by fmoulin          ###   ########.fr       */
+/*   Updated: 2025/12/09 12:11:19 by fmoulin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,7 +70,7 @@ int exec_cmd(char **argv, int size, char **envp, int *saved_stdin)
 	}
 	else
 	{
-		dup2(0, *saved_stdin);
+		dup2(*saved_stdin, 0);
 	}
 	return (0);
 }
